@@ -1,20 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Redirecting...</title>
-  <script type="text/javascript">
-    const path = window.location.pathname.replace(/^\/blog/, "") || "/";
-    const query = window.location.search;
-    const hash = window.location.hash;
-    const target = "https://rimehrab.is-a.dev/blog" + path + query + hash;
-    window.location.replace(target);
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <meta http-equiv="refresh" content="0; url=https://rimehrab.is-a.dev/blog">
+    <script type="text/javascript">
+        window.location.href = "https://rimehrab.is-a.dev/blog";
+    </script>
+    <link rel="canonical" href="https://rimehrab.is-a.dev/blog">
 </head>
 <body>
-  <noscript>
-    <p>If you're not redirected, <a href="https://rimehrab.is-a.dev/blog">click here</a>.</p>
-  </noscript>
+    <p>If you are not redirected automatically, follow this <a href="https://rimehrab.is-a.dev/blog">link to FerrisLand</a>.</p>
 </body>
 </html>
