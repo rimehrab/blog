@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Redirecting...</title>
+  <meta http-equiv="refresh" content="0">
+  <script>
+    if (window.location.pathname.startsWith("/blog")) {
+      const path = window.location.pathname;
+      const search = window.location.search || "";
+      const hash = window.location.hash || "";
+      const target = "https://rimehrab.is-a.dev" + path + search + hash;
+      window.location.replace(target);
+    } else {
+      // fallback if it’s not a blog path
+      document.write("<h2>404 - Page not found</h2>");
+    }
+  </script>
+</head>
+<body>
+  <p>Redirecting you to the new blog... If nothing happens, 
+    <a id="manual" href="#">click here</a> or 
+    <a href="https://rimehrab.is-a.dev/404">visit the custom 404 page</a>.
+  </p>
+  <script>
+    const path = window.location.pathname;
+    const search = window.location.search || "";
+    const hash = window.location.hash || "";
+    document.getElementById("manual").href = "https://rimehrab.is-a.dev" + path + search + hash;
+  </script>
+</body>
+</html>
